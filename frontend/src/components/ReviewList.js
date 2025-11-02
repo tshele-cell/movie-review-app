@@ -4,7 +4,6 @@ import axios from 'axios';
 const ReviewList = () => {
   const [reviews, setReviews] = useState([]);
 
-  // Sample data with the names you want
   const sampleReviews = [
     {
       id: 1,
@@ -39,7 +38,7 @@ const ReviewList = () => {
   const fetchReviews = async () => {
     try {
       const response = await axios.get('http://localhost:5000/api/reviews');
-      // If no reviews from backend, use sample data
+      
       if (response.data.length === 0) {
         setReviews(sampleReviews);
       } else {
@@ -47,7 +46,7 @@ const ReviewList = () => {
       }
     } catch (error) {
       console.error('Error fetching reviews:', error);
-      // If API fails, use sample data
+      
       setReviews(sampleReviews);
     }
   };
