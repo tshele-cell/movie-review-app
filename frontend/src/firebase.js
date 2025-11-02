@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
-// REPLACE THIS WITH YOUR ACTUAL CONFIG FROM FIREBASE CONSOLE
+
 const firebaseConfig = {
   apiKey: "AIzaSyC9kIrh7Z9wNUlrMTd39GzdWaZo3wv0yzc",
   authDomain: "movie-review-app-lebajoa.firebaseapp.com",
@@ -11,7 +11,6 @@ const firebaseConfig = {
   appId: "1:57129566898:web:46ff5b21df9786756dbfab"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export default app;
