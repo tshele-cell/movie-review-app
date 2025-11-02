@@ -45,7 +45,6 @@ const MovieSearch = () => {
   };
 
   const reviewThisMovie = (movie) => {
-    // Navigate to Add Review page with movie data pre-filled
     navigate('/add-review', { 
       state: { 
         preFilledMovie: movie.title 
