@@ -13,7 +13,6 @@ const AddReview = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Check if we came from movie search with pre-filled data
   useEffect(() => {
     if (location.state && location.state.preFilledMovie) {
       setFormData(prev => ({
